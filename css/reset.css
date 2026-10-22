@@ -1,0 +1,19 @@
+/* Современный CSS reset без универсального селектора для margin/padding. */
+:where(html) { line-sizing: normal; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; tab-size: 4; }
+:where(body, h1, h2, h3, h4, p, figure, blockquote, dl, dd) { margin-block: 0; }
+:where(ul, ol) { margin-block: 0; padding-inline-start: 1.25rem; }
+:where(h1, h2, h3, h4) { font-size: inherit; font-weight: inherit; }
+:where(img, svg, video, canvas, audio, iframe, embed, object) { display: block; max-inline-size: 100%; }
+:where(img, video) { block-size: auto; }
+:where(button, input, select, textarea) { font: inherit; letter-spacing: inherit; }
+:where(button, select) { text-transform: none; }
+:where(button, [type="button"], [type="reset"], [type="submit"]) { cursor: pointer; }
+:where(button:disabled, input:disabled, select:disabled, textarea:disabled) { cursor: not-allowed; }
+:where(textarea) { resize: vertical; }
+:where(table) { border-collapse: collapse; border-color: currentColor; text-indent: 0; }
+:where(a) { color: inherit; text-decoration: none; }
+:where([hidden]) { display: none !important; }
+:where(dialog) { color: inherit; }
+:where(fieldset) { min-inline-size: 0; margin: 0; padding: 0; border: 0; }
+:where(input, select, textarea) { min-width: 0; }
+:where(:focus-visible) { outline-offset: 3px; }
